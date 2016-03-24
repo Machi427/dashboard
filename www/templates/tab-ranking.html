@@ -1,0 +1,20 @@
+<ion-view view-title="ランキング">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle>
+    </ion-list>
+    <div class="card">
+      <div class="item item-divider">
+        $ionicPopupサンプル
+      </div>
+      <div class="item item-text-wrap">
+        <button class="button button-positive" ng-click="showPopup()">
+          Popupサンプルを実行する
+        </button>
+        <div align="right">ボタンを合計 {{buttonCountUp}}回押しました！</div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

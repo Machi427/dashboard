@@ -49,12 +49,29 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
+  .state('tab.game', {
+    url: '/game',
+    views: {
+      'tab-game': {
+        templateUrl: 'templates/tab-game.html',
+        controller: 'DashCtrl'
+      }
+    }
+  })
+  .state('tab.menu', {
+    url: '/menu',
+    views: {
+      'tab-menu': {
+        templateUrl: 'templates/tab-menu.html',
+        controller: 'DashCtrl'
+      }
+    }
+  })
   .state('tab.chats', {
-      url: '/chats',
+      url: '/friend',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
+        'tab-friend': {
+          templateUrl: 'templates/tab-friend.html',
           controller: 'ChatsCtrl'
         }
       }
@@ -68,12 +85,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-
-  .state('tab.account', {
-    url: '/account',
+  .state('tab.ranking', {
+    url: '/ranking',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
+      'tab-ranking': {
+        templateUrl: 'templates/tab-ranking.html',
         controller: 'AccountCtrl'
       }
     }

@@ -15,6 +15,27 @@ angular.module('starter.controllers', [])
   $scope.remove = function(chat) {
     Chats.remove(chat);
   };
+  $scope.onHold = function() {
+    $scope.gestureText = 'onHold';
+  };
+  $scope.onTap = function() {
+    $scope.gestureText = 'onTap';
+  };
+  $scope.onDoubleTap = function() {
+    $scope.gestureText = 'onDoubleTap';
+  };
+  $scope.onTouch = function() {
+    $scope.gestureText = 'onTouch';
+  };
+  $scope.onRelease = function() {
+    $scope.gestureText = 'onRelease';
+  };
+  $scope.onDrag = function() {
+    $scope.gestureText = 'onDrag';
+  };
+  $scope.onSwipe = function() {
+    $scope.gestureText = 'onSwipe';
+  };
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {

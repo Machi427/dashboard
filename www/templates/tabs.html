@@ -6,19 +6,28 @@ navigation history that also transitions its views in and out.
 <ion-tabs class="tabs-icon-top tabs-color-active-positive">
 
   <!-- Dashboard Tab -->
-  <ion-tab title="Status" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/dash">
+  <ion-tab title="ホーム" icon-off="ion-ios-home" icon-on="ion-ios-home" href="#/tab/dash">
     <ion-nav-view name="tab-dash"></ion-nav-view>
   </ion-tab>
 
   <!-- Chats Tab -->
-  <ion-tab title="Chats" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/chats">
-    <ion-nav-view name="tab-chats"></ion-nav-view>
+  <ion-tab title="フレンド" icon-off="ion-ios-people-outline" icon-on="ion-ios-people" href="#/tab/friend">
+    <ion-nav-view name="tab-friend"></ion-nav-view>
   </ion-tab>
 
   <!-- Account Tab -->
-  <ion-tab title="Account" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/account">
-    <ion-nav-view name="tab-account"></ion-nav-view>
+  <ion-tab title="ランキング" icon-off="ion-trophy" icon-on="ion-trophy" href="#/tab/ranking">
+    <ion-nav-view name="tab-ranking"></ion-nav-view>
   </ion-tab>
 
+  <!-- Home Tab -->
+  <ion-tab title="ゲーム" icon-off="ion-ios-game-controller-b-outline" icon-on="ion-ios-game-controller-b" href="#/tab/game">
+    <ion-nav-view name="tab-game"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Menu Tab -->
+  <ion-tab title="メニュー" icon-off="ion-navicon-round" icon-on="ion-navicon-round" href="#/tab/menu">
+    <ion-nav-view name="tab-menu"></ion-nav-view>
+  </ion-tab>
 
 </ion-tabs>
